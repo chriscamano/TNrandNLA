@@ -39,13 +39,6 @@ from .utils import (
     safe_cholesky_upper_psd,
     pinv_hermitian,
 )
-from .example_matrix import (
-    rpsdmat_flat,
-    rpsdmat_poly,
-    rpsdmat_exp,
-    rpsdmat_step,
-)
-
 # Provide a correctly spelled alias while keeping backward compatibility.
 krylov = krlyov
 
@@ -85,8 +78,4 @@ __all__ = [
     "lan_exp",
     "arnoldi",
     "IncrementalQR",
-    "rpsdmat_flat",
-    "rpsdmat_poly",
-    "rpsdmat_exp",
-    "rpsdmat_step",
 ]

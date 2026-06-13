@@ -1,0 +1,43 @@
+{
+  "status": "running",
+  "base_cfg": {
+    "n_values": [
+      30
+    ],
+    "chi_values": [
+      1,
+      4
+    ],
+    "J": 1.0,
+    "h": 8.0,
+    "beta": 0.5,
+    "target": 0.01,
+    "kmax": 600,
+    "k_init": 1,
+    "k_step": 1,
+    "k_step_chi1": 1,
+    "n_trials": 10,
+    "gse_k_kr": 3,
+    "gse_k_rmps": 2,
+    "tdvp_krylov_depth": 128,
+    "epsEnrich": 1e-14,
+    "epsSRC": 1e-14,
+    "tdvp_cutoff": 1e-14,
+    "b_shift": null,
+    "sample_seed": 3234,
+    "oracle_seed": 901234,
+    "trial_seed_stride": 1000003,
+    "dt_divisor": null,
+    "dt_divisor_factor": 4.0,
+    "enrich_every_step": false,
+    "relerr_abort_threshold": null,
+    "max_retries": 3,
+    "unshift_error": true,
+    "runtime_accounting": "oracle_matvecs_plus_current_postprocess",
+    "sweeps_mode": "dt_divisor_auto"
+  },
+  "records": [],
+  "cases_done": 0,
+  "cases_total": 20,
+  "latest_record": null
+}

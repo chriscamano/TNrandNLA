@@ -1,7 +1,6 @@
 import numpy as np
 import numpy.linalg as la
 from tnrnla.tn.stopping import Cutoff,FixedDimension
-from scipy.sparse.linalg import svds
 import scipy.linalg as sla
 
 def arnoldi(A, v0, k):

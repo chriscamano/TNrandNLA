@@ -4,7 +4,8 @@
 A majestic money plot
 </p>
 
-This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Exponential-scale linear algebra via tensor-network dimensionality reduction* ([link](LINK_GOES_HERE)) by
+This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Linear algebra at exponential scale
+via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
 <p align="center">
   <a href="https://chriscamano.github.io/">Chris Camaño</a>,
   <a href="https://www.ethanepperly.com/">Ethan N. Epperly</a>,

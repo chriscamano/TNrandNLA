@@ -1,0 +1,58 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# C and C++ build artifacts
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.pyd
+*.mod
+CMakeCache.txt
+CMakeFiles/
+cmake-build*/
+_compile_commands.json
+compile_commands.json
+*.out
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temp
+*.log
+.tmp/
+temp/
+.cache/
+
+# OS
+Thumbs.db
+
+# Your repo specific scratch
+code/**/__pycache__/
+code/**/build/
+experiments/**/__pycache__/
