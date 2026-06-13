@@ -1,4 +1,3 @@
-from .rownorm import sl3, sl4, xrownorm, xsymrownorm
 from .sketches import Gaussian, SRTT, srtt
 from .lra.ursvd import ursvd
 from .lra.rsvd import rsvd_sparse
@@ -74,8 +73,4 @@ __all__ = [
     "mps_nahutchpp",
     "mps_nystrompp",
     "rvec",
-    "sl3",
-    "sl4",
-    "xrownorm",
-    "xsymrownorm",
 ]
