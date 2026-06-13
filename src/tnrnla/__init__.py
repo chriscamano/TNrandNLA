@@ -7,8 +7,8 @@ from . import rnla as rnla
 from . import quantum as quantum
 from . import tn as tn
 from .tn.stopping import Cutoff, FixedDimension, no_truncation
-from .tn.mps import MPS, ZpMPS
-from .tn.mpo import MPO, ZpMPO
+from .tn.mps import MPS
+from .tn.mpo import MPO
 from .tn.trp import TRP
 from .tn.other.tensor_cache import tensorCache, TensorCache
 from .linalg.error import relerr
@@ -72,9 +72,7 @@ __all__ = [
     "FixedDimension",
     "no_truncation",
     "MPS",
-    "ZpMPS",
     "MPO",
-    "ZpMPO",
     "TRP",
     "tensorCache",
     "TensorCache",
