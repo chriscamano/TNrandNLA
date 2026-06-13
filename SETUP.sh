@@ -50,7 +50,7 @@ IS_MAC="0"
 
 if [ "${OS_NAME}" = "Darwin" ]; then
   log "TNrSVD SETUP INFO" "Detected macOS"
-  read -r -p "Are you on a Mac and want to skip MKL + incrementalqr C++ build? (y/n) " ans
+  read -r -p "Press y to skip the MKL installation n to try to install anyway " ans
   case "${ans}" in
     y|Y|yes|YES) IS_MAC="1" ;;
     *) IS_MAC="0" ;;
