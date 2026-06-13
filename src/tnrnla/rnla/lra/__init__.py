@@ -22,7 +22,6 @@ __all__ = [
     "rsi_errest",
     "ursvd",
     "rsvd_sparse",
-    "stabilized_nystrom_sparse",
     "nystrom",
     "pivpartchol",
     "greedy_chol",

@@ -109,8 +109,6 @@ def mps_xnystrace_eigh(
     err = float(np.std(tr_vec, ddof=1) / np.sqrt(k)) if k > 1 else 0.0
     return tr, err
 
-
-
 def mps_xnystrace_chol_gram(
     oracle,
     *,

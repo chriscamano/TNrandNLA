@@ -74,8 +74,8 @@ __all__ = [
     "pinv_hermitian",
     "truncated_svd",
     "truncated_eig",
-    "lanczos_exp",
     "lan_exp",
+    "lanczos_fun",
     "arnoldi",
     "IncrementalQR",
 ]

@@ -8,11 +8,8 @@ from .xtrace_resphere import xtrace_resphere
 from .xnystrace_resphere import xnystrace_resphere
 from .adap_hpp import adap_hpp, block_adap_hpp
 from tnrnla.linalg.utils import supfind
-from ..diag.udiagpp import udiagpp
-from ..diag.xdiag import xdiag
-from ..diag.xnysdiag import xnysdiag
 from .xsymtrace import xsymtrace
-from .mps import mps_hutch, mps_nahutchpp, mps_nystrompp
+from .mps import mps_hutch, mps_nahutchpp, mps_npp_gram, mps_npp_chol, mps_xnystrace_eigh
 from .randomvector import rvec
 from .common import (
     ensure_oracle_and_dim,
@@ -33,13 +30,12 @@ __all__ = [
     "adap_hpp",
     "block_adap_hpp",
     "supfind",
-    "udiagpp",
-    "xdiag",
-    "xnysdiag",
     "xsymtrace",
     "mps_hutch",
     "mps_nahutchpp",
-    "mps_nystrompp",
+    "mps_npp_gram",
+    "mps_npp_chol",
+    "mps_xnystrace_eigh",
     "rvec",
     "ensure_oracle_and_dim",
     "ensure_oracle_pair_and_dim",
