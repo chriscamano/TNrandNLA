@@ -7,7 +7,7 @@ from ..linalg.orth import lq
 from ..linalg.lra import truncated_svd
 from .stopping import Cutoff, no_truncation,FixedDimension
 from .tn1d import TN1D  
-from .mps import MPS, ZpMPS
+from .mps import MPS
 from .other.tensor_ops import flatten_left, flatten_right
 # ======================================================================
 """
