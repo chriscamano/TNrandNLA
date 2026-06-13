@@ -1,5 +1,5 @@
-from .mps import MPS, ZpMPS
-from .mpo import MPO, ZpMPO
+from .mps import MPS
+from .mpo import MPO
 from .trp import TRP
 from .other.tensor_cache import tensorCache, TensorCache
 from .stopping import Cutoff, FixedDimension, no_truncation
@@ -11,9 +11,7 @@ from .contraction.density_matrix import density_matrix, density_matrix_einsum
 
 __all__ = [
     "MPS",
-    "ZpMPS",
     "MPO",
-    "ZpMPO",
     "TRP",
     "tensorCache",
     "TensorCache",
