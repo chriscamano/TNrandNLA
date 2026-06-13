@@ -556,53 +556,6 @@ class MPS(TN1D):
 
         return MPS(blocks, dtype=dtype)
 
-
-        def rademacher(size):
-            return rng.choice(np.array([-1.0, 1.0], dtype=dtype), size=size)
-
-        def ss_bulk_block():
-            block = np.zeros((chi, d, chi), dtype=dtype)
-
-            for i in range(d):
-                for r in range(zeta):
-                    local_cols = rng.integers(0, b, size=chi)
-                    cols = r * b + local_cols
-                    signs = rademacher(chi)
-                    block[rows, i, cols] = bulk_scale * signs
-
-            return block
-
-        def ss_left_boundary():
-            block = np.zeros((d, chi), dtype=dtype)
-
-            for i in range(d):
-                for r in range(zeta):
-                    local_col = rng.integers(0, b)
-                    col = r * b + local_col
-                    sign = rademacher(())
-                    block[i, col] = boundary_scale * sign
-
-            return block
-
-        def ss_right_boundary():
-            block = np.zeros((chi, d), dtype=dtype)
-
-            for i in range(d):
-                local_cols = rng.integers(0, b, size=chi)
-                signs = rademacher(chi)
-                mask = local_cols == 0
-                block[rows[mask], i] = boundary_scale * signs[mask]
-
-            return block
-
-        blocks = [ss_left_boundary()]
-
-        for _ in range(n - 2):
-            blocks.append(ss_bulk_block())
-
-        blocks.append(ss_right_boundary())
-
-        return MPS(blocks, dtype=dtype)
     def crmps(n, m, d=2, random_tensor=None, dtype=np.complex128, sigma=None, rng=None):
         n = int(n)
         chi = int(m)
