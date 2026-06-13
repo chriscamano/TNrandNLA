@@ -36,7 +36,7 @@ def round_left(mps, stop=Cutoff(1e-14)):
     canform = getattr(mps, "canform", "None")
     pivot = getattr(mps, "pivot_idx", None)
     if not (canform == "Left" and pivot == mps.N - 1):
-        mps.orthLR()
+        mps.orthR()
 
     normY = mps.norm()
     if stop.cutoff is None:
@@ -74,7 +74,7 @@ def round_right(mps, stop=Cutoff(1e-14)):
     canform = getattr(mps, "canform", "None")
     pivot = getattr(mps, "pivot_idx", None)
     if not (canform == "Right" and pivot == 0):
-        mps.orthRL()
+        mps.orthL()
 
     normY = mps.norm()
     if stop.cutoff is None:

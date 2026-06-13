@@ -16,8 +16,8 @@ We do not recommend using this method unless high accuracy is not important.
 
 def zipup(mpo, mps, stop=Cutoff(1e-14), finalround=False, conditioning=False):
     if conditioning:
-        mpo.orthLR()
-        mps.orthLR()
+        mpo.orthR()
+        mps.orthR()
 
     n = mpo.N
     mps_out = [None] * n
@@ -108,8 +108,8 @@ def zipup_einsum(mpo, mps, stop=Cutoff(1e-14), finalround=False, conditioning=Fa
     #   DX rank trunction p_(previous)       = x
     
     if conditioning:
-        mpo.orthLR()
-        mps.orthLR()
+        mpo.orthR()
+        mps.orthR()
 
     n = mpo.N
     mps_out = [None] * n

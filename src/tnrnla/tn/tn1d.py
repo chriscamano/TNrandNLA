@@ -307,10 +307,10 @@ class TN1D:
         """
         if hasattr(self, "orth"):
             self.orth()
-        elif hasattr(self, "orthLR"):
-            self.orthLR()
+        elif hasattr(self, "orthR"):
+            self.orthR()
         else:
-            raise AttributeError("Object must implement orth() or orthLR() to normalize.")
+            raise AttributeError("Object must implement orth() or orthR() to normalize.")
         if self.orthoform == "Right":
             nrm = la.norm(self[-1], "fro")
             if nrm != 0:
@@ -428,7 +428,7 @@ class TN1D:
         if k == "mpo":
             if self.orthform in {"Left", "Right"}:
                 return
-            self.orthLR()
+            self.orthR()
             return
 
         raise ValueError(f"Unknown kind '{k}'. Expected 'mps' or 'mpo'.")

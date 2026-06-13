@@ -1070,7 +1070,7 @@ class TRP:
         out.invalidate_rhs_cache()
         return out
 
-    def orthRL(self):
+    def orthL(self):
         for j, m in enumerate(self.cols):
             m.orthL()
         self.orthform = "down"
@@ -1078,7 +1078,7 @@ class TRP:
         self.invalidate_rhs_cache()
         return self
 
-    def orthLR(self):
+    def orthR(self):
         for j, m in enumerate(self.cols):
             m.orthR()
         self.orthform = "up"
@@ -1091,9 +1091,9 @@ class TRP:
             return self
         key = str(kind).strip().lower()
         if key in {"left", "lr", "up"}:
-            return self.orthLR()
+            return self.orthR()
         if key in {"right", "rl", "down"}:
-            return self.orthRL()
+            return self.orthL()
         raise ValueError("kind must be one of {left, lr, up, right, rl, down}.")
 
     @classmethod

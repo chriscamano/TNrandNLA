@@ -421,7 +421,7 @@ def fit(mpo, mps, max_sweeps=4, stop=Cutoff(1e-14), random_tensor=np.random.rand
         guess = mps.copy()
 
     # orthogonalize it to have any arbitrary orthogonality center.
-    guess.orthLR()
+    guess.orthR()
 
     R = compute_right_envs(mps, mpo, guess)
 
@@ -573,7 +573,7 @@ def fit_einsum(mpo, mps, max_sweeps=10, stop=Cutoff(1e-14), random_tensor=np.ran
     guess = MPS.rmps(n=mps.N, m=mps[0].shape[1], d=mps[0].shape[0], random_tensor=random_tensor)
 
     # orthogonalize it to have any arbitrary orthogonality center.
-    guess.orthLR()
+    guess.orthR()
 
     R = compute_right_envs(mps, mpo, guess)
 
