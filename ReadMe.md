@@ -1,7 +1,5 @@
 # $\color{lightblue}{\texttt{TNrNLA}}$<p align="center">
 
-<img width="2910" height="930" alt="image" src="https://github.com/user-attachments/assets/6fdfae1b-8deb-4f91-b203-e76993ec1609" />
-
 
 This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Linear algebra at exponential scale
 via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
@@ -11,6 +9,7 @@ via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
   <a href="https://ram900.com/">Raphael A. Meyer</a>,
   and <a href="https://tropp.caltech.edu/">Joel A. Tropp</a>.
 </p>
+<img width="2910" height="930" alt="image" src="https://github.com/user-attachments/assets/d84d89dd-46f9-48f4-a3fa-4286c159b846" />
 
 $\texttt{TNrNLA}$ uses tensor networks to design new algorithms for large-scale numerical linear algebra, with optimized data structures and routines for matrix product states ($\mathrm{MPS}$), matrix product operators ($\mathrm{MPO}$), and tensorized random projections ($\mathrm{TRP}$). It also includes randomized numerical linear algebra primitives such as sketching, low-rank approximation, and variance-reduced stochastic trace estimation, implemented directly in terms of tensor network operations.
 
