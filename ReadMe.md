@@ -1,8 +1,7 @@
 # $\color{lightblue}{\texttt{TNrNLA}}$<p align="center">
 
-</p>
-[Figure2 (1).pdf](https://github.com/user-attachments/files/28946742/Figure2.1.pdf)
-</p>
+<img width="2910" height="930" alt="image" src="https://github.com/user-attachments/assets/6fdfae1b-8deb-4f91-b203-e76993ec1609" />
+
 
 This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Linear algebra at exponential scale
 via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
