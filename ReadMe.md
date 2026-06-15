@@ -1,7 +1,7 @@
 # $\color{lightblue}{\texttt{TNrNLA}}$<p align="center">
 
 </p>
-A majestic money plot
+[Figure2 (1).pdf](https://github.com/user-attachments/files/28946742/Figure2.1.pdf)
 </p>
 
 This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Linear algebra at exponential scale
@@ -46,16 +46,13 @@ Tutorials that demonstrate *machine-precision* linear algebra at exponential sca
 - **Randomized SVD** [[1]](https://arxiv.org/abs/0909.4061)
 - **Nyström approximations**
   - Randomized Nyström decomposition [[2]](https://dl.acm.org/doi/10.5555/1046920.1194916) [[3]](https://arxiv.org/abs/1303.1849) with a judiciously [stabilized](https://epubs.siam.org/doi/10.1137/22M1538648) variant  
-  - Generalized Nyström decomposition [[4]](https://dl.acm.org/doi/abs/10.1145/1536414.1536445) [[5]](https://epubs.siam.org/doi/abs/10.1137/17M1111590) [[6]](https://www.sciencedirect.com/science/article/pii/S1063520307001364)
 - **Variance-reduced trace estimation**
   - Hutch++ [[7]](https://arxiv.org/abs/2010.09649)  
   - Nyström++ [[8]](https://arxiv.org/abs/2109.10659)  
   - XTrace / XNysTrace with resphering [[9]](https://arxiv.org/abs/2301.07825)
 - **Fast Structured sketching operators**
   - Khatri–Rao sketching operators and tensor network representations
-  - SparseStacks [[10]](https://arxiv.org/abs/1012.1577) [[11]](https://arxiv.org/abs/2508.21189)  
-  - Subsampled Randomized Trigonometric Transforms (WHT,FFT,DCT)
-
+  - 
 ## 2. $\color{lightblue}\textbf{  Efficient implementations of 1D tensor networks}$ 
 - **$\mathrm{MPS}/\mathrm{MPS}$ algebra**
   - Compressed binary operations `+`, `-`, `*`, `/` and in-place `+=`, `-=`, `*=`, `/=`
@@ -72,20 +69,17 @@ Tutorials that demonstrate *machine-precision* linear algebra at exponential sca
   - Zip-up [[13]](https://arxiv.org/abs/1002.1305)  
   - Fitting (variational) method [[14]](https://arxiv.org/abs/cond-mat/0407066)  
   - Density matrix method [[15]](https://quantum-journal.org/papers/q-2024-12-27-1580/)
-- Explicit and Implicit tensor network orthogonalization algorithms
-  - $\mathrm{MPS}$ CholeskyQR / CholeskyQR2 $$\color{green}\text{new!}$$
-  - $\mathrm{MPS}$ Gram–Schmidt orthogonalization (MGS2) $$\color{green}\text{new!}$$
-
+  - 
 ## 3. $\color{lightblue}\textbf{ New (and existing) randomized tensor network methods and tools}$ 
 - **Randomized compression and rounding**
   - Optimized Successive Randomized Compression (SRC) for the compressed $\mathrm{MPO}\mathrm{MPS}$ [[16]](https://arxiv.org/abs/2504.06475)  
   - Randomized \mathrm{MPS} rounding methods [[17]](https://arxiv.org/abs/2110.04393)
 - Isotropically normalized Gaussian random matrix product states ($\mathrm{rMPSs}$) $$\color{green}\text{new-ish!}$$  
 - **Optimized implementations of Tensorized random projections ($\mathrm{TRP}$)** [[18]](https://arxiv.org/abs/2003.05101) [[19]](https://arxiv.org/abs/2105.00105) 
-  - $\mathrm{TRP}-\mathrm{MPO}$ product via SRC $$\color{green}\text{new!}$$  
-  - $\mathrm{TRP}-\mathrm{MPS}$ products $$\color{green}\text{new!}$$  
-  - $\mathrm{TRP}-\mathrm{TRP}$ products $$\color{green}\text{new!}$$  
-  - $\mathrm{TRP}$ vector and matrix multiplication $$\color{green}\text{new!}$$  
+  - $\mathrm{MPS} Column Matrix -\mathrm{MPO}$ product via SRC $$\color{green}$$  
+  - $\mathrm{MPS} Column Matrix-\mathrm{MPS}$ products $$\color{green}$$  
+  - $\mathrm{MPS} Column Matrix-\mathrm{TRP}$ products $$\color{green}$$  
+  - $\mathrm{MPS} Column Matrix$ vector and matrix multiplication $$\color{green}$$  
 - **$\mathrm{MPS}$ versions of rNLA algorithms**
   - Optimized MPS Gram matrix calculations $$\color{green}\text{new!}$$  
   - $\mathrm{MPS}$ Nyström approximation $$\color{green}\text{new!}$$
