@@ -67,13 +67,12 @@ Tutorials that demonstrate *machine-precision* linear algebra at exponential sca
   - Zip-up [[13]](https://arxiv.org/abs/1002.1305)  
   - Fitting (variational) method [[14]](https://arxiv.org/abs/cond-mat/0407066)  
   - Density matrix method [[15]](https://quantum-journal.org/papers/q-2024-12-27-1580/)
-  - 
 ## 3. $\color{lightblue}\textbf{ New (and existing) randomized tensor network methods and tools}$ 
 - **Randomized compression and rounding**
   - Optimized Successive Randomized Compression (SRC) for the compressed $\mathrm{MPO}\mathrm{MPS}$ [[16]](https://arxiv.org/abs/2504.06475)  
   - Randomized \mathrm{MPS} rounding methods [[17]](https://arxiv.org/abs/2110.04393)
 - Isotropically normalized Gaussian random matrix product states ($\mathrm{rMPSs}$) $$\color{green}\text{new-ish!}$$  
-- **Optimized implementations of Tensorized random projections ($\mathrm{TRP}$)** [[18]](https://arxiv.org/abs/2003.05101) [[19]](https://arxiv.org/abs/2105.00105) 
+- **Optimized implementations of MPS column matrices** [[18]](https://arxiv.org/abs/2003.05101) [[19]](https://arxiv.org/abs/2105.00105) 
   - $\mathrm{MPS} Column Matrix -\mathrm{MPO}$ product via SRC $$\color{green}$$  
   - $\mathrm{MPS} Column Matrix-\mathrm{MPS}$ products $$\color{green}$$  
   - $\mathrm{MPS} Column Matrix-\mathrm{TRP}$ products $$\color{green}$$  
@@ -92,15 +91,10 @@ Tutorials that demonstrate *machine-precision* linear algebra at exponential sca
     * Reduced density MPOs from ground state MPSs
     * Sparse Hamiltonians
   * **Time evolution**
-    * TEBD-2 for real and imaginary time evolution
     * TDVP-1 for real and imaginary time evolution
     * TDVP-1 with global Krylov subspace enrichment
   * **Thermal states and trace based estimation**
-    * Gibbs state preparation via $\mathrm{MPS}$ Nyström plus $\mathrm{MPS}$ XNysTrace $$\color{green}\text{new!}$$
     * Partition function estimation via tensor network variance reduced trace estimation $$\color{green}\text{new!}$$
-  * **Entanglement and higher trace moments**
-    * Estimation of higher trace moments $\mathrm{Tr}(\rho_A^n)$ for Rényi entropies and related quantities $$\color{green}\text{new!}$$
-
 ---
 
 # ✦ $\color{lightblue}\textbf{Gallery}$
