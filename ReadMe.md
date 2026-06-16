@@ -2,7 +2,7 @@
 
 
 This repository contains **Tensor Network randomized Numerical Linear Algebra** ($\texttt{TNrNLA}$), a custom research library developed for the paper *Linear algebra at exponential scale
-via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
+via tensor network dimension reduction* ([link](https://arxiv.org/abs/2606.15350)) by
 <p align="center">
   <a href="https://chriscamano.github.io/">Chris Camaño</a>,
   <a href="https://www.ethanepperly.com/">Ethan N. Epperly</a>,
@@ -11,7 +11,7 @@ via tensor network dimension reduction* ([link](LINK_GOES_HERE)) by
 </p>
 <img width="2910" height="930" alt="image" src="https://github.com/user-attachments/assets/d84d89dd-46f9-48f4-a3fa-4286c159b846" />
 
-$\texttt{TNrNLA}$ uses tensor networks to design new algorithms for large-scale numerical linear algebra, with optimized data structures and routines for matrix product states ($\mathrm{MPS}$), matrix product operators ($\mathrm{MPO}$), and tensorized random projections ($\mathrm{TRP}$). It also includes randomized numerical linear algebra primitives such as sketching, low-rank approximation, and variance-reduced stochastic trace estimation, implemented directly in terms of tensor network operations.
+$\texttt{TNrNLA}$ uses tensor networks to design new algorithms for large-scale numerical linear algebra, with optimized data structures and routines for matrix product states ($\mathrm{MPS}$), matrix product operators ($\mathrm{MPO}$), and MPS column matrices. It also includes randomized numerical linear algebra primitives such as sketching, low-rank approximation, and variance-reduced stochastic trace estimation, implemented directly in terms of tensor network operations.
 
 $\texttt{TNrNLA}$ is designed to be familiar and easy to use. Most tensor network contractions are hidden behind a high level interface to allow practitioners to write code that mirrors traditional linear algebra syntax. In particular, an expression such as
 
@@ -50,7 +50,7 @@ Tutorials that demonstrate *machine-precision* linear algebra at exponential sca
   - XTrace / XNysTrace with resphering [[9]](https://arxiv.org/abs/2301.07825)
 - **Fast Structured sketching operators**
   - Khatri–Rao sketching operators and tensor network representations
-  - 
+    
 ## 2. $\color{lightblue}\textbf{  Efficient implementations of 1D tensor networks}$ 
 - **$\mathrm{MPS}/\mathrm{MPS}$ algebra**
   - Compressed binary operations `+`, `-`, `*`, `/` and in-place `+=`, `-=`, `*=`, `/=`
